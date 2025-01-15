@@ -247,135 +247,93 @@
     text-decoration: underline;
   }
   
-
-
-  /* Responsive Styling for Tablets and Smaller Screens (768px and below) */
-    @media screen and (max-width: 768px) {
+/* Responsive Styling for Mobile Screens (768px and below) */
+@media screen and (max-width: 768px) {
     /* Navbar */
     .navbar {
-      flex-direction: column;
+      flex-direction: column; /* Stack links vertically */
       align-items: flex-start;
-      padding: 10px 20px;
-      margin-bottom: 30px;
+      padding: 10px 20px; /* Add spacing */
     }
-    
+  
     .navbar a {
-      font-size: 0.9rem;
-      margin: 5px 0;
+      font-size: 0.9rem; /* Slightly smaller font size */
+      margin: 5px 0; /* Add spacing between links */
     }
   
     /* Section 1 */
-    .section-1 {
-      padding-top: 20px;
-    }
-    
     .grid-container {
       grid-template-columns: 1fr; /* Single-column layout */
-      gap: 20px;
-      padding: 20px;
+      gap: 20px; /* Add space between grid items */
+      padding: 20px; /* Add padding for better spacing */
     }
   
     .grid1 {
-      margin-left: 0;
-      text-align: center; /* Center text on smaller devices */
+      text-align: center; /* Center-align text */
+      margin-left: 0; /* Remove left margin */
+      padding: 10px; /* Add spacing */
     }
   
     .grid1 h1 {
-      font-size: 4rem; /* Scale down heading */
+      font-size: 3rem; /* Scale down heading */
     }
   
     .grid1 p {
       font-size: 1.2rem; /* Reduce paragraph size */
-
+    }
+  
+    .grid2 {
+      margin-left: 0; /* Remove left margin */
     }
   
     .grid2 .image {
-      width: 80%; /* Reduce image size */
+      width: 90%; /* Scale image to fit within the screen */
       height: auto; /* Maintain aspect ratio */
-      margin: 0 auto; /* Center the image */
-    }
-  
-    .grid3 img {
-      width: 100%; /* Stretch image to full width */
-      margin-left: 0;
+      margin: 0 auto; /* Center image */
     }
   
     /* Section 2 */
     .section-2 {
-      height: auto; /* Adjust height for smaller screens */
+      padding: 20px; /* Add spacing */
+      text-align: center; /* Center-align the text */
     }
   
     .centralized-text h2 {
-      font-size: 2rem; /* Scale down heading size */
-      margin: 0;
+      font-size: 2rem; /* Scale down heading */
+      margin: 20px auto; /* Add vertical spacing */
     }
   
     /* Intro Section */
     .intro {
       grid-template-columns: 1fr; /* Single-column layout */
-      gap: 20px;
+      gap: 20px; /* Add spacing */
+      padding: 20px; /* Add padding */
     }
   
     .intro-left {
-      font-size: 1rem;
-      text-align: center;
+      text-align: center; /* Center-align text */
+      font-size: 1rem; /* Reduce font size */
     }
   
     .intro-right img {
-      width: 100%; /* Full width */
-    }
-  
-    /* Gallery */
-    .gallery {
-      flex-direction: column; /* Stack images vertically */
-      gap: 20px;
-    }
-  
-    .gallery-image {
-      height: auto; /* Maintain aspect ratio */
+      width: 90%; /* Scale image */
+      max-width: 600px; /* Constrain max size */
+      margin: 0 auto; /* Center image */
     }
   
     /* Footer */
     .footer-content {
-      align-items: center;
+      align-items: center; /* Center-align content */
       text-align: center;
     }
   
     .footer-nav {
-      flex-direction: column;
-      gap: 10px;
+      flex-direction: column; /* Stack links vertically */
+      gap: 10px; /* Add spacing */
     }
   
     .footer-nav a {
-      font-size: 0.9rem;
-    }
-  }
-  
-  /* Responsive Styling for Small Phones (480px and below) */
-  @media screen and (max-width: 480px) {
-    .navbar {
-      padding: 10px 15px;
-    }
-  
-    .grid1 h1 {
-      font-size: 3rem; /* Further scale down heading */
-      padding: 2vh;
-    }
-  
-    .grid1 p {
-      font-size: 1rem;
-    }
-  
-    .centralized-text h2 {
-      font-size: 1.8rem;
-    }
-  
-    .intro-right img {
-      width: 100%; /* Full width */
-    }
-  
-    .footer-nav a {
-      font-size: 0.8rem; /* Reduce footer link size */
+      font-size: 0.9rem; /* Smaller font size */
     }
   }
   
