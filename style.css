@@ -1,0 +1,381 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  }
+  
+  body {
+    background: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 40px;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 20px;
+    color: #333;
+  }
+  
+  /* Section 1 Styling */
+  .section-1 {
+    padding-top: 40px;
+    margin-bottom: 0; 
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two main columns */
+    grid-template-rows: 3;
+    max-width: 1200px;
+
+    /*padding: 100px 40px;
+    margin: 0 auto;*/
+  }
+  
+  /* Grid1: Text Section */
+  .grid1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    text-align: left;
+    margin-left: 200px;
+  }
+  
+  .grid1 p {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .grid1 h1 {
+    font-size: 5.5rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Grid2: Square Image */
+  .grid2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    position: relative;
+  }
+  
+  .grid2 .image {
+    width: 500px; /* Make image square */
+    height: 500px; /* Make image square */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-left: 100px; /* Center the image */
+    align-self: right;
+  }
+  
+/* Grid3: Full-Width Image */
+.grid3 {
+    grid-column: 1 / 2; /* Stay in the first column */
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    position: relative; /* Use relative positioning for image adjustments */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+    width: 100%; /* Full width of the container */
+    top: -80px;
+  }
+  
+  .grid3 img {
+    position: relative;
+    width: 800px; /* Set specific image width */
+    max-width: none; /* Allow image to extend beyond container */
+    object-fit: cover;
+    margin-left: -100px; /* Move the image to the left by 100px */
+    height: 600px;
+}
+  
+/* Section 2 Styling */
+/* Section 2 Styling */
+.section-2 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 50vh; /* Adjust the height for better proportions */
+    text-align: center; /* Center the text inside */
+    background-color: #f7f7f7; /* Optional: Background color */
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove extra margin */
+  }
+  
+  /* Centralized Text Styling */
+  .centralized-text h2 {
+    font-size: 2.5rem; /* Adjust font size for balance */
+    font-weight: bold;
+    line-height: 1.5;
+    color: #333;
+    margin: 150px 150px; /* Remove extra margins */
+  }
+  
+  /* Two-Column Layout */
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .intro-left {
+    text-align: left;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 40px 40px;
+  }
+  
+  .intro-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Section 3 Styling */
+  .section-3 {
+    background: #f7f7f7;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .left-text {
+    max-width: 800px; /* Optional: Limit content width */
+    margin-left: 30px; /* Push the content closer to the left */
+    padding-top: 90px; /* Remove side padding */
+
+}
+  
+  .left-text h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  /* Gallery for Full-Width Images */
+/* Gallery Section */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    width: 100%; /* Ensure wrapper matches image size */
+    cursor: pointer; /* Show a pointer to indicate interactivity */
+  }
+  
+  .gallery-image {
+    width: 100%; /* Full width of the wrapper */
+    height: 800px; /* Maintain aspect ratio */
+    display: block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 10px; /* Adjust the position as needed */
+    right: 10px; /* Adjust the position as needed */
+    color: #010101; /* White text */
+    padding: 5px 10px; /* Add padding around text */
+    font-size: 1rem; /* Adjust font size */
+    z-index: 2; /* Ensure it appears above the image */
+    pointer-events: none; /* Prevent the text from interfering with the link */
+  }
+  
+  .image-wrapper a {
+    text-decoration: none;
+  }
+  
+  
+  /* Footer Section */
+  .footer {
+    padding: 40px 20px;
+    background-color: #f7f7f7; /* Light background */
+    color: #000; /* Black text */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-text {
+    margin-bottom: 40px;
+    text-align: left;
+    max-width: 600px; /* Adjust width for cleaner alignment */
+    line-height: 1.6;
+  }
+  
+  .footer-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    width: 100%;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .footer-nav a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  /* Responsive Styling for Tablets and Smaller Screens (768px and below) */
+    @media screen and (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+      margin-bottom: 30px;
+    }
+    
+    .navbar a {
+      font-size: 0.9rem;
+      margin: 5px 0;
+    }
+  
+    /* Section 1 */
+    .section-1 {
+      padding-top: 20px;
+    }
+    
+    .grid-container {
+      grid-template-columns: 1fr; /* Single-column layout */
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .grid1 {
+      margin-left: 0;
+      text-align: center; /* Center text on smaller devices */
+    }
+  
+    .grid1 h1 {
+      font-size: 4rem; /* Scale down heading */
+    }
+  
+    .grid1 p {
+      font-size: 1.2rem; /* Reduce paragraph size */
+
+    }
+  
+    .grid2 .image {
+      width: 80%; /* Reduce image size */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0 auto; /* Center the image */
+    }
+  
+    .grid3 img {
+      width: 100%; /* Stretch image to full width */
+      margin-left: 0;
+    }
+  
+    /* Section 2 */
+    .section-2 {
+      height: auto; /* Adjust height for smaller screens */
+    }
+  
+    .centralized-text h2 {
+      font-size: 2rem; /* Scale down heading size */
+      margin: 0;
+    }
+  
+    /* Intro Section */
+    .intro {
+      grid-template-columns: 1fr; /* Single-column layout */
+      gap: 20px;
+    }
+  
+    .intro-left {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .intro-right img {
+      width: 100%; /* Full width */
+    }
+  
+    /* Gallery */
+    .gallery {
+      flex-direction: column; /* Stack images vertically */
+      gap: 20px;
+    }
+  
+    .gallery-image {
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    /* Footer */
+    .footer-content {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer-nav a {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Responsive Styling for Small Phones (480px and below) */
+  @media screen and (max-width: 480px) {
+    .navbar {
+      padding: 10px 15px;
+    }
+  
+    .grid1 h1 {
+      font-size: 3rem; /* Further scale down heading */
+      padding: 2vh;
+    }
+  
+    .grid1 p {
+      font-size: 1rem;
+    }
+  
+    .centralized-text h2 {
+      font-size: 1.8rem;
+    }
+  
+    .intro-right img {
+      width: 100%; /* Full width */
+    }
+  
+    .footer-nav a {
+      font-size: 0.8rem; /* Reduce footer link size */
+    }
+  }
+  
